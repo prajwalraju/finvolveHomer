@@ -1,0 +1,56 @@
+---
+# Additional page configuration
+
+# Additional configurations are loaded using its file name, minus the extension, as an anchor (https://<mydashboad>#<config>). 
+# `config.yml` is still used as a base configuration, and all values here will overwrite it, so you don't have to re-defined everything
+
+
+subtitle: "this is the develop envronment related dashboard"
+
+# This overwrites message config. Setting it to empty to remove message from this page and keep it only in the main one:
+message: ~
+
+# as we want to include a differente link here (so we can get back to home page), we need to replicate all links or they will be revome when overwriting the links field:
+links:
+  - name: "Home"
+    icon: "fas fa-home"
+    url: "#"
+
+  - name: "Develop page!"
+    icon: "fas fa-file-alt"
+    url: "#develop-page" 
+
+services:
+  - name: "IB"
+    icon: "fas fa-cloud"
+    items:
+      - name: "IB Dashboard"
+        logo: "assets/tools/sample.png"
+        subtitle: "Dev Dashbaord for IB"
+        keywords: "devIB IB IBdashboard Dashbaord"
+        url: "https://dev-ib.getlend.in"
+        target: "_blank"
+
+      - name: "IB swagger"
+        subtitle: "Dev swagger for IB"
+        keywords: "IBSwagger swagger"
+        logo: "https://seeklogo.com/images/S/swagger-logo-A49F73BAF4-seeklogo.com.png"
+        url: "https://ib-dev-backend.getlend.in/ib/swagger-ui/index.html"
+        target: "_blank"
+
+      - name: "BE instance"
+        logo: "https://cdn1.iconfinder.com/data/icons/technology-devices-2/100/Database-512.png"
+        subtitle: "Instance address : 65.1.226.152"
+        target: "_blank" 
+
+      - name: "Database instance"
+        logo: "https://freevector.co/wp-content/uploads/2009/02/20093-blank-database-symbol1.png"
+        subtitle: "Instance address : product-postgres.cqxu3izy5ksk.ap-south-1.rds.amazonaws.com/ib"
+        url: "product-postgres.cqxu3izy5ksk.ap-south-1.rds.amazonaws.com/ib"
+        target: "_blank"
+      
+      - name: "Installation guid"
+        logo: "https://cdn1.iconfinder.com/data/icons/hawcons/32/698685-icon-94-document-file-doc-512.png"
+        subtitle: "Guid to setup IB on local"
+        url: "https://docs.google.com/document/d/1EQ8nIrHvYy630kQqTJB5t4ZX18sM5IEFmbVcK-EjlEM"
+        target: "_blank"
