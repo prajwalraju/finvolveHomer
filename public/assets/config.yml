@@ -82,8 +82,16 @@ services:
   - name: "Tools"
     icon: "fa-solid fa-screwdriver-wrench"
     items:
-      - name: "Repositories"
+      - name: "Bit bucket"
+        subtitle: "Place for store all the repos"
         keywords: "repo bitbucket git"
         logo: "https://www.axonius.com/hubfs/Adapter%20Logos/bitbucket%20logo.png"
         url: "https://bitbucket.org/kulizadev/workspace/overview/"
+        target: "_blank"
+      
+      - name: "Zimyo"
+        subtitle: "HR dashboard"
+        keywords: "hr attendance"
+        logo: "https://employee.zimyo.work/icon.ico"
+        url: "https://employee.zimyo.work/"
         target: "_blank"
